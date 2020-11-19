@@ -58,8 +58,6 @@ Backup là quá trình sao lưu và lưu trữ toàn bộ thông tin dữ liệu
 Mỗi kỹ thuật đều có ưu nhược điểm và yêu cầu chi phí về phần cứng để lưu trữ khác nhau. Vì vậy, người dùng có thể thực hiện backup theo lộ trình: FB hàng tháng, DB hàng tuần, IB hàng ngày.
 
 ## 6. Antivirus
-
-
-
-
-
+Antivirus là một loại phần mềm dùng để ngăn chặn, quét, phát hiện và xóa virus khỏi máy tính. Sau khi được cài đặt, hầu hết các phần mềm chống virus sẽ tự động chạy nền để cung cấp khả năng bảo vệ theo thời gian thực trước các cuộc tấn công.
+<br>Các chương trình bảo vệ chống vi-rút toàn diện giúp bảo vệ tệp và phần cứng của bạn khỏi phần mềm độc hại như worm, Trojan và phần mềm gián điệp, đồng thời cũng có thể cung cấp biện pháp bảo vệ bổ sung như tường lửa có thể tùy chỉnh và chặn trang web.
+<br>
