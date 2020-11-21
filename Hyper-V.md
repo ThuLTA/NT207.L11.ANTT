@@ -1,0 +1,2 @@
+## 1. Khái niệm
+Hyper-V là sản phẩm ảo hóa phần cứng của Microsoft. Nó cho phép bạn tạo và chạy phiên bản phần mềm của máy tính, được gọi là máy ảo. Mỗi máy ảo hoạt động như một máy tính hoàn chỉnh, chạy hệ điều hành và các chương trình. Khi bạn cần tài nguyên máy tính, máy ảo cung cấp cho bạn sự linh hoạt hơn, giúp tiết kiệm thời gian và tiền bạc, đồng thời là cách hiệu quả hơn để sử dụng phần cứng hơn là chỉ chạy một hệ điều hành trên phần cứng vật lý.
