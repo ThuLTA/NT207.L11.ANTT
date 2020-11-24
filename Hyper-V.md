@@ -16,3 +16,16 @@ Hyper-V là sản phẩm ảo hóa phần cứng của Microsoft, cho phép bạ
 - Security - Khởi động an toàn giúp bảo vệ khỏi phần mềm độc hại và các truy cập trái phép khác vào máy ảo và dữ liệu của máy ảo.
 
 ## 2. Cấu trúc Hyper-V
+Hyper-V phân chia mỗi máy ảo thành một partition. Một partition là một đơn vị cách ly về mặt logic và có thể chứa một hệ điều hành làm việc trong đó. Thường có ít nhất 1 partition gốc chứa OS và ngăn ảo hóa, có quyền truy cập trực tiếp các thiết bị phần cứng. Tiếp theo đó, partition gốc có thể sinh các partition con (được gọi là máy ảo) để chạy (guest OS). Một partition con cũng có thể sinh tiếp các partition con của mình.
+
+Hyper-V gồm 3 phần chính:
+- Hypervisor: 
+  - Là một chương trình phần mềm giám sát máy ảo, có chức năng quản lý một hoặc nhiều máy ảo (VM) được tách biệt các hệ điều hành và ứng dụng của máy tính với phần cứng vật lý cơ bản.
+  - Các hypervisor cho phép mỗi máy ảo truy cập vào tài nguyên phần cứng vật lý như CPU, RAM và lưu trữ. Đồng thời nó cũng có thể giới hạn số lượng tài nguyên hệ thống mà mỗi máy ảo có thể sử dụng để đảm bảo cho nhiều máy ảo cùng sử dụng đồng thời trên một hệ thống.
+- Parent Partition: 
+  - Đây là phân vùng giữ nhiệm vụ tạo và quản lý các phân vùng con trên hệ thống, giao tiếp trực tiếp với phần cứng và tài nguyên ảo hóa logic.
+  - Phân vùng này quản lý và phân bố thiết bị phần cứng đồng thời hiển thị cho bộ xử lý và cấp phát bộ nhớ tất cả điều hoạt động thông qua lớp Hypervisor. Tài nguyên phần cứng của phân vùng cha sẽ được chia sẻ và cấp phát sử dụng bởi các phân vùng con. Bên cạnh đó còn mang nhiệm vụ quản lý điện năng tình trạng hoạt động và ghi nhận các sự cố lỗi khi xảy ra.
+- Child Partitions:
+  - Một partition con không có quyền truy cập trực tiếp tài nguyên vật lý, mà chỉ “nhìn thấy” chúng với danh nghĩa là thiết bị ảo (virtual device). 
+  - Mọi yêu cầu đến thiết bị ảo sẽ được chuyển qua VMBus đến thiết bị ở partition cha. Thông tin hồi đáp cũng được chuyển hướng thông qua VMBus. Nếu thiết bị ở partition cha cũng là thiết bị ảo, nó sẽ được chuyển hướng tiếp tục cho đến khi gặp thiết bị thực ở partition gốc.
+  
