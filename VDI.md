@@ -26,14 +26,19 @@ Với VDI, tất cả các máy tính đều là ảo, người dùng có thể 
   - Nơi đặt server
   - Thiết bị để làm việc
 - Công việc có thể được thực hiện từ xa để giải quyết các lỗi từ 1 server trạm duy nhất.
+
 **Flexibility:** Tính linh hoạt
 - Thực hiện nâng cấp update trên master Destop, các bản sao sẽ được triển khai lên các VM, không mất thời gian cho việc cài đặt cho từng máy.
 - Tạo ra VM mới một cách nhanh chóng mà không làm ảnh hưởng đến người dùng khác.
+
 **Accessibility:** Khả năng tiếp cận
 Các thiết bị như điện thoại di động, máy tính bảng,... đều có thể được sử dụng thay cho desktop truyền thống. Ngoài ra, người dùng có thể sử dụng một số phần mềm không có sẵn, chẳng hạn như các gói phần mềm riêng biệt trên Windows trên Mac.
+
 **Cost Efficiency:** Hiệu quả về chi phí
 VDI thể hiện rất rõ việc tiết kiệm chi phí hơn một mô hình truyền thống, nhất là chi phí để triển khai văn phòng. Bên cạnh đó, thiết bị endpoint sử dụng trong VDI cũng không đắt như một PC thông thường dù có tuổi thọ cao hơn, cấu hình mạnh mẽ hơn.
+
 **Data Security and Instant Backup Capabilities:** Bảo mật dữ liệu và sao lưu tức thì
 Thực tế phổ biến ở các công ty đang vận hành các hệ thống quan trọng là triển khai VDI trong hai trung tâm dữ liệu riêng biệt. Một cái đóng vai trò cếu vì bất kỳ lý do gì mà một trung tâm ngừng hoạt động do thỏa hiệp về bảo mật hoặc lỗi thành phần chính, thì sẽhính trong khi cái kia là một trang dự phòng để dự phòng. N có sự chuyển giao ngay lập tức cho trang web dự phòng để các dịch vụ tiếp tục liền mạch và không bị gián đoạn.
+
 **Bring your own device (BYOD)**
 Cung cấp khả năng sử dụng bất kì thiết bị nào để làm việc.
